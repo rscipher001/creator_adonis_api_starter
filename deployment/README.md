@@ -22,3 +22,12 @@ You can use Let's Encrypt to generate a free SSL certificate for your domain. Re
 sudo apt install python3-certbot-nginx
 sudo certbot -d <yourdomain.com> # and follow steps
 ```
+
+## How to deploy using GitHub actions and rsync
+In rsync based approach built code is copied to your VPS so you don't have to worry about doing any setup on your server except install rsync on server.
+
+Update `deploy.yaml` and create folder and move it to `.github/workflows` and push to github, You also need to set the following secrets in your repository:
+- HOST
+- PORT
+- SSH_KEY
+- USER
