@@ -8,7 +8,8 @@
     "start": "node server.js",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "node ace test"
   },
   "eslintConfig": {
     "extends": [
